@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Mar1</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -40,6 +40,21 @@
 
 <div class="container">
 <h1> THEORIES </h1>
+    <div class="container">
+  <h2>Close Alerts Via JavaScript</h2>
+  <div class="alert alert-success alert-dismissible" id="myAlert">
+    <button type="button" class="close">&times;</button>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".close").click(function(){
+    $("#myAlert").alert("close");
+  });
+});
+</script>
     <h2> WORLD DOMINATION </h2>
     <p>Many people believe that Mark Zuckerberg is planning to take over the world via mind control through Facebook. In a way, he already has. </p>
     
